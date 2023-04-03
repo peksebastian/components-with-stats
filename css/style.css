@@ -1,0 +1,39 @@
+@font-face {
+	font-family: Hanken;
+	src: url(/results-summary-component-main/assets/fonts/static/HankenGrotesk-Bold.ttf);
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: Hanken-Extra;
+	src: url(/results-summary-component-main/assets/fonts/static/HankenGrotesk-ExtraBold.ttf);
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: Hanken-Medium;
+	src: url(/results-summary-component-main/assets/fonts/static/HankenGrotesk-Medium.ttf);
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 1.6rem;
+	font-family: Hanken;
+}
