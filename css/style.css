@@ -42,6 +42,7 @@ body {
 
 .stats {
 	display: flex;
+	justify-content: center;
 	height: 100vh;
 }
 
@@ -102,11 +103,116 @@ body {
 	font-size: 1.4rem;
 }
 
+.summary {
+	display: flex;
+	flex-direction: column;
+	padding: 1em 2em;
+}
+
+.summary__title {
+	margin-bottom: 1em;
+	font-size: 1.6rem;
+}
+
+.summary__feature {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 45px;
+	margin: 0.5em;
+	border-radius: 10px;
+}
+
+.summary__feature-icon {
+	margin-right: 0.5em;
+	vertical-align: middle;
+}
+
+.summary__feature-name {
+	margin-left: 1em;
+	font-size: 1.4rem;
+	font-family: Hanken-Bold;
+}
+
+.summary__feature-points {
+	margin-right: 1em;
+	font-size: 1.4rem;
+	font-family: Hanken-Bold;
+	color: #000;
+}
+.summary__feature-points span {
+	color: #777;
+}
+
+.summary__feature--first {
+	background-color: hsla(0, 100%, 67%, 0.089);
+	color: hsla(0, 100%, 67%);
+}
+
+.summary__feature--second {
+	background-color: hsla(39, 100%, 56%, 0.089);
+	color: hsla(39, 100%, 56%);
+}
+
+.summary__feature--third {
+	background-color: hsla(166, 100%, 37%, 0.089);
+	color: hsla(166, 100%, 37%);
+}
+
+.summary__feature--fourth {
+	background-color: hsla(234, 85%, 45%, 0.089);
+	color: hsla(234, 85%, 45%);
+}
+
+.summary__continue {
+	margin-top: 1em;
+	padding: 1em;
+	border-radius: 25px;
+	border: 1px solid transparent;
+	background-color: hsl(224, 30%, 27%);
+	color: #ddd;
+	font-family: Hanken-Bold;
+	font-size: 1.6rem;
+}
+
 .attribution {
-	font-size: 11px;
+	margin-top: 2em;
+	font-size: 1.1rem;
 	text-align: center;
 }
 
 .attribution a {
 	color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 768px) {
+	.stats {
+		align-items: center;
+	}
+
+	.wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		flex-direction: row;
+	}
+
+	.result {
+		width: 35%;
+		padding: 3em;
+		border-radius: 25px;
+	}
+
+	.result__describe {
+		padding: 0;
+	}
+
+	.summary__feature-name {
+		padding-right: 7em;
+	}
+
+	.summary__continue:hover {
+		background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+	}
 }
